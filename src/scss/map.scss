@@ -1,0 +1,26 @@
+.map {
+	background: #242b33;
+	padding: 180px 0px;
+	&__container {
+		max-width: 1080px;
+		margin: 0px auto;
+		padding: 0 15px;
+	}
+
+	&__title {
+		font-family: 'Playfair Display', serif;
+		font-size: 36px;
+		color: #d4c17f;
+		font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 100px;
+	}
+
+	&__image {
+		height: 360px;
+		overflow: hidden;
+		> img {
+			width: 100%;
+		}
+	}
+}

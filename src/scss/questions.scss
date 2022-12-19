@@ -1,0 +1,85 @@
+.questions {
+	background: #242b33;
+	padding-bottom: 180px;
+	&__container {
+		max-width: 1080px;
+		margin: 0px auto;
+		padding: 0 15px;
+	}
+
+	&__title {
+		font-family: 'Playfair Display', serif;
+		font-size: 36px;
+		color: #d4c17f;
+		font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 100px;
+	}
+
+	&__item {
+		display: flex;
+		flex: 0 1 25%;
+		margin: 0 -10px;
+		flex-wrap: wrap;
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}
+.item {
+	&__text {
+		padding: 0 10px;
+		text-align: center;
+		font-size: 13px;
+		line-height: 16px;
+		color: #fff;
+		margin-bottom: 20px;
+		align-self: center;
+	}
+
+	&__name {
+		padding: 0 10px;
+		input {
+			padding: 17px 50px;
+			color: #fff;
+			margin-bottom: 30px;
+			text-align: center;
+			background: rgba(255, 255, 255, 0.2);
+			&::placeholder {
+				font-size: 14px;
+				color: #bebebe;
+				line-height: 27px;
+			}
+		}
+	}
+
+	&__tel {
+		padding: 0 10px;
+		input {
+			padding: 17px 50px;
+			color: #fff;
+			margin-bottom: 30px;
+			text-align: center;
+			background: rgba(255, 255, 255, 0.2);
+			&::placeholder {
+				font-size: 14px;
+				color: #bebebe;
+				line-height: 27px;
+			}
+		}
+	}
+
+	&__button {
+		padding: 0 10px;
+		button {
+			color: #fff;
+			font-size: 16px;
+			line-height: 27px;
+			padding: 12px 55px;
+			background: #d4c17f;
+		}
+	}
+}

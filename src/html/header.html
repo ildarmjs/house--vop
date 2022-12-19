@@ -1,11 +1,78 @@
 <header class="header">
-  <div class="header__container">
-    <a href="#" class="header__logo logo"></a>
-    <nav class="header__menu menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">Link</a></li>
-      </ul>
-    </nav>
-    <!-- @@include('./iconMenu.html', {}) -->
-  </div>
+	<div class="header__nav">
+		<div class="header__container">
+			<a data-goto=".header" href="#" class="header__logo"
+				><img src="../images/icons/logo.svg" alt=""
+			/></a>
+			<div class="header__menu menu">
+				<div class="menu__icon">
+					<span></span>
+				</div>
+				<div class="menu__body">
+					<ul class="menu__list">
+						<li>
+							<a data-goto=".flats" href="#" class="menu__link">О комплексе</a>
+						</li>
+						<li>
+							<a data-goto=".questions" href="#" class="menu__link">Район</a>
+						</li>
+						<li>
+							<a data-goto=".form" href="#" class="menu__link"
+								>Каталог квартир</a
+							>
+						</li>
+						<li>
+							<a data-goto=".video" href="#" class="menu__link">Ипотека</a>
+						</li>
+						<li>
+							<a data-goto=".footer" href="#" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bg">
+		<div class="header__content">
+			<h1 class="header__title">
+				Жилой комплекс <br />
+				в историческом центре
+			</h1>
+			<div class="header__mouse">
+				<img src="../images/icons/mouse.svg" alt="" />
+			</div>
+			<div class="header__info info">
+				<div class="info__map">
+					<img src="../images/icons/map.svg" alt="" />
+					<span>Наб. реки Фонтанки 10 - 15</span>
+				</div>
+				<div class="info__tel">
+					<img src="../images/icons/phone.svg" alt="" />
+					<span>8(812)123-45-67</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </header>
+
+<!-- <div class="header__bg">
+		<div class="header__content">
+			<h1 class="header__title">
+				Жилой комплекс <br />
+				в историческом центре
+			</h1>
+			<div class="header__mouse">
+				<img src="@img/icons/mouse.svg" alt="" />
+			</div>
+			<div class="header__info info">
+				<div class="info__map">
+					<img src="@img/icons/map.svg" alt="" />
+					<span>Наб. реки Фонтанки 10 - 15</span>
+				</div>
+				<div class="info__tel">
+					<img src="@img/icons/phone.svg" alt="" />
+					<span>8(812)123-45-67</span>
+				</div>
+			</div>
+		</div>
+	</div> -->

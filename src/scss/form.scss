@@ -1,0 +1,122 @@
+.form {
+	padding: 180px 0;
+	background: linear-gradient(
+			180deg,
+			#242b33 10.42%,
+			rgba(36, 43, 51, 0) 50.52%,
+			#242b33 90.1%
+		),
+		linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+		url('../images/bg2.jpg') 0 0 / cover no-repeat;
+
+	&__container {
+		max-width: 1080px;
+		margin: 0px auto;
+		padding: 0 15px;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 -16px;
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&__col {
+		padding: 0 16px;
+		&_1 {
+			flex: 1 1 45%;
+			@media (max-width: 992px) {
+				flex: 1 1 80%;
+			}
+		}
+		&_2 {
+			flex: 1 1 55%;
+			@media (max-width: 992px) {
+			}
+		}
+	}
+
+	&__title {
+		font-family: 'Playfair Display', serif;
+		font-size: 36px;
+		color: #d4c17f;
+		font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		color: #fff;
+		font-size: 16px;
+		line-height: 24px;
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+	}
+}
+
+.register {
+	&__row {
+		display: flex;
+		margin: 0 -15px;
+		flex-wrap: wrap;
+		align-items: center;
+		@media (max-width: 576px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	&__input {
+		flex: 1 1 50%;
+		padding: 0 15px;
+		input {
+			padding: 17px 50px;
+			color: #fff;
+			margin-bottom: 30px;
+			text-align: center;
+			background: rgba(255, 255, 255, 0.2);
+			&::placeholder {
+				font-size: 14px;
+				color: #bebebe;
+				line-height: 27px;
+			}
+			@media (max-width: 768px) {
+				font-size: 14px;
+				line-height: 27px;
+				padding: 12px 36px;
+			}
+		}
+	}
+	&__col {
+		flex: 1 1 50%;
+		padding: 0 15px;
+	}
+	&__text {
+		text-align: center;
+		font-size: 13px;
+		line-height: 16px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	&__button {
+		button {
+			color: #fff;
+			font-size: 16px;
+			line-height: 27px;
+			padding: 12px 55px;
+			background: #d4c17f;
+			@media (max-width: 768px) {
+				font-size: 14px;
+				line-height: 27px;
+				padding: 12px 55px;
+			}
+		}
+	}
+}

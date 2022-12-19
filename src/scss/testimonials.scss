@@ -1,0 +1,52 @@
+.testimonials {
+	background: #242b33;
+	padding: 120px 0px;
+	&__container {
+		max-width: 764px;
+		margin: 0px auto;
+		padding: 0 15px;
+	}
+
+	&__card {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: 767px) {
+		}
+	}
+}
+.card {
+	color: #fff;
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: 767px) {
+			flex: 1 1 50%;
+			margin-bottom: 30px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+		@media (max-width: 576px) {
+			flex: 1 1 100%;
+			margin-bottom: 30px;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	&__image {
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 27px;
+		text-align: center;
+	}
+}

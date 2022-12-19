@@ -1,0 +1,50 @@
+.flats {
+	background: #242b33;
+	&__container {
+		max-width: 1080px;
+		margin: 0px auto;
+		padding: 0 15px;
+	}
+
+	&__title {
+		font-family: 'Playfair Display', serif;
+		font-size: 36px;
+		color: #d4c17f;
+		font-weight: 700;
+		line-height: 48px;
+		margin-bottom: 100px;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		@media (max-width: 576px) {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+
+	&__col {
+		flex: 0 1 50%;
+		padding: 0 15px;
+	}
+
+	&__image {
+		> img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&__info {
+		transform: translate(50px, -50px);
+		display: inline-block;
+		color: #fff;
+		font-size: 24px;
+		line-height: 28px;
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+}
