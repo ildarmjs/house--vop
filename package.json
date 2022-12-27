@@ -1,5 +1,5 @@
 {
-	"name": "gulp-2022",
+	"name": "gulp",
 	"version": "1.1.0",
 	"description": "house--vop",
 	"main": "gulpfile.js",
@@ -27,9 +27,6 @@
 	],
 	"author": "Ildar Mingazov",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/StarkElessar/gulp-2022/issues"
-	},
 	"homepage": "https://ildarmjs.github.io/house--vop/",
 	"devDependencies": {
 		"@babel/core": "^7.19.1",
